@@ -1,3 +1,3 @@
-[submodule "fem-typescript-fundamentals-v3"]
-	path = fem-typescript-fundamentals-v3
+[submodule "typescript-fundamentals-v3"]
+	path = typescript-fundamentals-v3
 	url = https://github.com/mjshuff23/fem-typescript-fundamentals-v3
