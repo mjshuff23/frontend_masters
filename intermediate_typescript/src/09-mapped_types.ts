@@ -1,5 +1,5 @@
 // Mapped Types
-import { Fruit } from '../dist/01-declaration_merging';
+import { Fruit } from './01-declaration_merging';
 // Mapped types are a way to create new types based on old types.  It's kind of
 //  like array.map() for types.  It's a way to transform types.
 // This is one of the most powerful tools for transforming types in TypeScript.
@@ -40,4 +40,4 @@ function printFruitCatalog(fruitCatalog: MyRecord) {
 // Index signatures can be on all strings, or all numbers, or all symbols, but
 
 // Let's make our Record Type a bit more generic
-type MyRecordNew<KeyType extends string, ValueType> = { [Key in KeyType]: ValueType}
+type MyRecordNew<KeyType extends keyof any, ValueType> = { [Key in KeyType]: ValueType}
