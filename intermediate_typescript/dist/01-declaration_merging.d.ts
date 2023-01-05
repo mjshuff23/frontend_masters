@@ -1,12 +1,7 @@
-interface Fruit {
-    name: string;
-    mass: number;
-    color: string;
-}
-declare class Fruit {
+export declare class Fruit {
+    name?: string;
+    mass?: number;
+    color?: string;
     static createBanana(): Fruit;
 }
-declare namespace Fruit {
-}
-export { Fruit };
 //# sourceMappingURL=01-declaration_merging.d.ts.map

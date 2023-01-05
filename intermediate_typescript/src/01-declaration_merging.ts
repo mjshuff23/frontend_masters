@@ -70,13 +70,14 @@ namespace $ {
   }
 }
 
-class Fruit {
-  name?: string;
-  mass?: number;
-  color?: string;
-  static createBanana(): Fruit {
-    return { name: 'banana', mass: 120, color: 'yellow' };
-  }
+export class Fruit {
+  constructor(
+    public readonly name: string,
+    public readonly mass: number,
+    public readonly color: string,
+  ) {}
+
+  static createBanana(): Fruit { return new Fruit('banana', 120, 'yellow'); }
 }
 
 // test for a value
@@ -85,5 +86,5 @@ valueTest.createBanana();
 
 // test for a type
 const typeTest: Fruit = { name: 'banana', mass: 120, color: 'yellow' }; // Yes!
-typeTest.name = 'apple';
+// typeTest.name = 'apple'; // readonly
 // typeTest.createBanana(); // No!
