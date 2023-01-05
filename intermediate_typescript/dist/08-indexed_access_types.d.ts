@@ -12,4 +12,4 @@ declare let carColor: CarShape['color'];
 declare let carMake: CarShape['make'];
 declare let carColorRedComponents: CarShape['color']['red'];
 declare let carProperty: CarShape['make' | 'model' | 'color'];
-//# sourceMappingURL=08-indexed-access-types.d.ts.map
+//# sourceMappingURL=08-indexed_access_types.d.ts.map

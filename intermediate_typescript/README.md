@@ -10,3 +10,6 @@
 - [Lesson 4: Conditional Types](src/04-conditional_types.ts)
 - [Lesson 5: Conditional Types Practice](src/05-conditional_types-practice.ts)
 - [Lesson 6: Extract & Exclude](src/06-extract_exclude.ts)
+- [Lesson 7: Inference and Conditional Types](src/07-inference_conditional_types.ts)
+- [Lesson 08: Indexed Access Types](src/08-indexed_access_types.ts)
+- [Lesson 09: Mapped Types](src/09-mapped_types.ts)
