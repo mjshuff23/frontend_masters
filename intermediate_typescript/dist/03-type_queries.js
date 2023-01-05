@@ -1,5 +1,5 @@
 // Type Queries
-import { Fruit } from '../dist/01-declaration_merging.js';
+import { Fruit } from './01-declaration_merging';
 const date = new Date();
 //  - typeof: Obtain the type of a value
 async function main() {

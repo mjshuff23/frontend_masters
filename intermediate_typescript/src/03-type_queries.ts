@@ -1,5 +1,5 @@
 // Type Queries
-import { Fruit } from '../dist/01-declaration_merging.js';
+import { Fruit } from './01-declaration_merging';
 //  Type queries allow us to obtain a type from a value\
 //  - keyof: Obtain the keys of an object
 //  - typeof: Obtain the type of a value
