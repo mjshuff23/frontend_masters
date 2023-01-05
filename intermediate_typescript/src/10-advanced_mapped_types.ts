@@ -35,3 +35,5 @@ type PickProperties<ValueType, Keys extends keyof ValueType> = {
 type PartOfWindow3 = PickProperties<Window, "document" | "navigator" | "setTimeout">;
 
 type PartOfDocument = PickProperties<Document, "body" | "cookie" | "createElement">;
+
+// PickProperties exactly describes the behavior of the Pick utility type

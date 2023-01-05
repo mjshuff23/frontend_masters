@@ -8,3 +8,4 @@
 //  create a type that is a subset of another type.
 const myWindow = new Window();
 myWindow.document;
+// PickProperties exactly describes the behavior of the Pick utility type
