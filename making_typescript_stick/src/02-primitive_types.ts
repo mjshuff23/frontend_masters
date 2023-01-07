@@ -27,4 +27,3 @@ let bar: Bar = {
 }
 
 let second = bar;
-console.dir(second);
