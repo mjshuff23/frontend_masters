@@ -5,7 +5,8 @@
     "outDir": "./dist/", // output directory
     "target": "ESNext",   // target ES version
     "strict": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "useUnknownInCatchVariables": true,
   },
   "include": [           // files to compile
     "./src/**/*"
