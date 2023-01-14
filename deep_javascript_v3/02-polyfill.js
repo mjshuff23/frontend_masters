@@ -7,6 +7,7 @@
 // 4. For `-0` testing, no built-in utility exists, but here's a hint: `-Infinity`.
 // 5. You cannot use the built-in `Object.is(..)` -- that's cheating!
 // 6. If the parameters are any other values, just test them for strict equality
+// we add || true to the if statement so that the polyfill will run even if the browser supports Object.is.  This can be done with almost any polyfill.
 
 if (!Object.is || true) {
   Object.is = function ObjectIs(x, y) {
@@ -50,4 +51,4 @@ console.log(Object.is("42",42) === false);
 console.log(Object.is("foo","bar") === false);
 console.log(Object.is(false,true) === false);
 console.log(Object.is(null,undefined) === false);
-console.log(Object.is(undefined,null) === false);
+console.log(Object.is(undefined,null) === false);amd
