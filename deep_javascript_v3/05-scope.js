@@ -146,3 +146,62 @@ const teachers = ["Kyle", "Suzy"];
 teachers.push("Frank");
 console.log(teachers);
 
+let john = "John";
+{
+  const john = "Johnny";
+  console.log(john);
+}
+console.log(john);
+
+// You should only really use const on primitive values, and not on objects,
+//  because you can still change the properties of an object
+
+// Hoisting //
+// Hoisting is the process of moving all variable declarations to the top of
+//  the scope they are declared in before the code is executed
+// Technically the JS engine does not hoist, but it does create a scope and we
+//  can think of it as hoisting.  It technically handles variables and functions
+//  during the first pass of the code, which is known as the compilation phase
+student;
+teacher;
+console.log(student, teacher2);
+var student = 'you';
+var teacher2 = 'Kyle';
+
+// Some people like taking advantage of the hoisting of a function declaration
+// to put the function declarations at the bottom of the file, and the
+// executable code at the top of the file for readability, for example:
+
+// Executable code
+const x = 3;
+const y = 4;
+const z = addAndMultiply(x, y);
+echoResult(z);
+
+// Function declarations
+function addAndMultiply(x, y) {
+  console.log(`Adding ${y} to ${x} and then multiplying it by ${y}`);
+  return (x + y) * y;
+}
+
+function echoResult(result) {
+  console.log(`The result is ${result}`);
+}
+
+var myTeacher = 'Kyle';
+// This will print undefined because the above variable is hoisted, but the
+//  assignment is not
+otherTeacher();
+
+function otherTeacher() {
+  console.log(myTeacher);
+  var myTeacher = 'Suzy';
+}
+
+var teacher3 = 'Kyle';
+var teacher3;
+getTeacher();
+
+function getTeacher() {
+  console.log(teacher3)
+}
